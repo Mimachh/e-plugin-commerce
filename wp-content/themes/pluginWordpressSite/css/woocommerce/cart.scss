@@ -1,0 +1,32 @@
+
+.product-thumbnail {
+
+    a {
+
+
+        img {
+            width: 250px !important;
+            height: auto !important;
+        }
+    }
+}
+
+.coupon #coupon_code {
+    width: 135px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.checkout_button_div_custom {
+    position: relative;
+}
+
+.checkout-button {
+    @include prepare_button_to_debord(auto, 100%);
+    @include debord_style(3%, 1%, 101%, 115%);
+    @include all_debord_hover();
+}
+
+.product-quantity {
+    min-height: 45px;
+}

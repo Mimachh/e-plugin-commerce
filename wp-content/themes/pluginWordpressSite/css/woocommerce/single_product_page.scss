@@ -1,0 +1,142 @@
+
+
+
+
+
+// SINGLE PRODUCT
+
+
+.button_single_variation_div_relative {
+    margin-top: 2em;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.single_add_to_cart_button {
+    @include prepare_button_to_debord(60px, 250px);
+    @include debord_style(2%, 2%, 102%, 110%);
+    @include all_debord_hover();
+
+}
+
+.disabled {
+    &:hover {
+        background-color: #a46497 !important;
+    }
+    & + .debord {
+        display: none;
+    }
+}
+
+.woocommerce div.product form.cart .variations {
+    position: relative;
+}
+.woocommerce div.product form.cart .variations select {
+    height: 45px;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 6px;
+    border-radius: 25px;
+    border: none;
+}
+
+.woocommerce div.product form.cart .variations th {
+    border: 0;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.woocommerce div.product form.cart {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.woocommerce-variation-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    
+    text-shadow: 2px 2px 0px $dark, 1px 1px 1px $dark;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    // .price {
+    //     color: $primary !important;
+    // }
+}
+
+.woocommerce div.product {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.product_title {
+    padding-bottom: 10px !important;
+}
+
+.woocommerce-product-details__short-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        padding: 10px 0;
+    }
+}
+
+.woocommerce-notices-wrapper {
+    padding-top: 25px;
+}
+
+
+
+.woocommerce-error {
+    @include banniere_message_woocommerce($danger);
+}
+
+
+
+.woocommerce-message {
+    @include banniere_message_woocommerce($green);
+}
+
+.woocommerce-info {
+    @include banniere_message_woocommerce($primary);
+}
+
+@include atSmallMedium {
+    .woocommerce-my-nav-page {
+        nav {
+            ul {
+                li a {
+                    font-size: 1.3em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .woocommerce-product-details__short-description {
+        justify-content: flex-start;
+    }
+
+    .woocommerce div.product {
+        text-align: start;
+    }
+}
+
+@include atMedium {
+    .wp-post-image {
+        height: auto !important;
+        width: auto !important;
+        margin: 0 !important;
+      }
+
+
+}

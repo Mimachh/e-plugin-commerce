@@ -1,0 +1,43 @@
+2023-05-13T08:30:51+00:00 CRITICAL syntax error, unexpected double-quoted string "single_image_width", expecting ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\functions.php à la ligne 6
+
+2023-05-13T12:38:40+00:00 CRITICAL syntax error, unexpected token "if", expecting "(" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php à la ligne 25
+
+2023-05-13T12:42:03+00:00 CRITICAL syntax error, unexpected token ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php à la ligne 25
+
+2023-05-13T12:49:13+00:00 CRITICAL Uncaught Error: Call to undefined function wp_get_post_ancestors() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php:25
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template.php(783): require_once()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template.php(718): load_template('C:\\Users\\Karl\\L...', true, Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\archive-product.php(19): get_header('shop')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#7 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php à la ligne 25
+
+2023-05-13T12:49:21+00:00 CRITICAL Uncaught Error: Call to undefined function wp_get_post_ancestors() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php:25
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template.php(783): require_once()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template.php(718): load_template('C:\\Users\\Karl\\L...', true, Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\archive-product.php(19): get_header('shop')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#7 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php à la ligne 25
+
+2023-05-13T12:49:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_ancestors(), 0 passed in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php on line 25 and exactly 1 expected in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php:1032
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php(25): get_post_ancestors()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template.php(783): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template.php(718): load_template('C:\\Users\\Karl\\L...', true, Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\archive-product.php(19): get_header('shop')
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#8 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php à la ligne 1032
+

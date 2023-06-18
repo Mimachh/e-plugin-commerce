@@ -1,0 +1,116 @@
+// Product Page
+
+.site-main {
+    position: relative !important;
+}
+
+.list-product {
+    padding: 2em 16px !important;
+}
+
+
+.size-woocommerce_thumbnail {
+    height: auto !important;
+    width: 100% !important;
+    display: relative;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+  }
+
+  .wp-post-image {
+    height: auto !important;
+    width: auto !important;
+    margin: auto !important;
+  }
+
+ 
+
+  .woocommerce-products-header {
+    position: relative;
+    background-color: $dark;
+    z-index: 2;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0  !important;
+    &__title {
+        color: $light;
+        font-size: 3.8em;
+        @include shadow_text($tertiary);
+    }
+  }
+.woocommerce-breadcrumb {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    a {
+        color: $light !important;  
+    }
+}
+
+.woocommerce .woocommerce-breadcrumb {
+    color: $primary;
+}
+
+// .woocommerce-my-nav-page {
+// display: none;
+// }
+
+
+    .woocommerce-my-nav-page {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $dark;
+        color: $light;
+        height: $woocommerce-my-nav-page-height;
+        nav {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                
+                li a {
+                    font-size: 1em;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+
+  
+.woocommerce li.product {
+    text-align: center;
+}
+
+
+    @include atSmallMedium {
+        .woocommerce-my-nav-page {
+            nav {
+                ul {
+                    li a {
+                        font-size: 1.3em;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }

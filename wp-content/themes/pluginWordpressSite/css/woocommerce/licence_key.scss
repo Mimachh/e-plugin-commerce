@@ -1,0 +1,93 @@
+
+.licence_key_div_copy  {
+    font-size: 14px;
+    margin: 20px 0 2px;
+    div {
+        display: flex;
+        max-width: 100%;
+        input {
+            min-width: 80%;
+            flex-grow: 1;
+            padding: 0 8px;
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            outline: none;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        button {
+            flex-shrink: 0;
+            width: var(--height);
+            height: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddddd;
+            color: #333333;
+            outline: none;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+            transition: all 0.2s ease-in;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding: 3px;
+    
+            &:hover {
+                background-color: $primary;
+                color: $light;
+            }
+        }
+    }
+}
+
+
+.fa-copy {
+    font-size: 14px;
+
+    padding: 3px;
+    
+}
+
+
+
+.how_many_left {
+    font-size: 14px;
+}
+
+
+.generate-div {
+    margin-top: 12px;
+    position: relative;
+    width: 55%;
+    height: 30px;
+}
+
+.generate-key {
+    padding: 8px 0;
+    position: relative;
+    cursor: pointer;
+    @include prepare_button_to_debord(auto, 100%, $primary);
+    @include debord_style(3%, 1%, 101%, 120%, );
+    @include all_debord_hover($color1: $primary);
+}
+
+@include atMedium {
+    .licence_key_div_copy  {
+        display: flex;
+        gap: 10px;
+        div {
+            input {
+                min-width: 350px;
+            }
+        }
+    }
+
+    .generate-div {
+        position: relative;
+        width: 30%;
+        height: 30px;
+    }
+
+}

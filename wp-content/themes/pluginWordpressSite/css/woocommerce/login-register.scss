@@ -1,0 +1,82 @@
+
+
+.login_form_for_debord, .register_form_for_debord {
+    position: relative;
+    height: 100% !important;
+    z-index: 5;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.login_div_form_debord {
+    @include prepare_button_to_debord(100%, 100%, $light, $dark, $gray);
+    @include debord_style(3%, 1%, 101%, 102%);
+    padding: 20px 15px;
+}
+
+.register_div_form_debord {
+    @include prepare_button_to_debord(100%, 100%, $light, $dark, $gray);
+    @include debord_style(3%, 1%, 101%, 102%, $tertiary);
+    padding: 20px 15px;
+}
+
+.login_title {
+    @include shadow_text($tertiary, 4px, 2em, $dark);
+    text-align: center;
+}
+
+.register_title {
+    @include shadow_text($gray, 4px, 2em, $dark);
+    text-align: center;
+}
+
+.register_div_form_debord p input, .login_div_form_debord p input {
+    font-size: 15px;
+    padding: 10px 0px 10px 15px;
+    @include input_border($secondary, 25px);
+}
+
+.login_div_form_debord p button {
+
+
+    @include input_border($tertiary !important, 15px !important);
+    background-color: $light !important;
+    color: $tertiary !important;  
+
+    &:hover {
+        @include input_border($tertiary !important, 15px !important);
+        background-color: $tertiary !important;
+        color: $light !important;
+    }
+}
+
+.register_div_form_debord p button {
+
+
+    @include input_border($dark !important, 15px !important);
+    background-color: $light !important;
+    color: $dark !important; 
+    float: center !important;
+    &:hover {
+        @include input_border($dark !important, 15px !important);
+        background-color: $dark !important;
+        color: $light !important;
+    }
+}
+
+.button_register_custom_div, .button_login_custom_div {
+    margin-top: 15px !important;
+
+   text-align: center;
+}
+
+.button_login_custom_div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 15px !important;
+}
+
+.woocommerce-LostPassword {
+    text-align: center;
+}

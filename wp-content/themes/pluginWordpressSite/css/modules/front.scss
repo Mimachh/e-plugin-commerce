@@ -1,0 +1,37 @@
+.landing-page {
+    min-height: calc(100vh - ($navHeight * 3 ) + ($footerHeightSmall / 5));
+    color: $light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-landing-page {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.landing-hero {
+    font-size: 3.5em;
+    width: 100%;
+}
+
+@include atSmallMedium {
+    .landing-page {
+        flex-direction: row;
+    } 
+    .logo-landing-page {
+        width: 33%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .landing-hero {
+        width: 66%;
+    }
+}

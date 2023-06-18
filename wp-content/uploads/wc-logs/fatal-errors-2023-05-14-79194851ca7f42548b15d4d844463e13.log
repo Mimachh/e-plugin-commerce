@@ -1,0 +1,130 @@
+2023-05-14T08:03:43+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "add_container_row_div_classes" not found or invalid function name in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\templates\archive-product.php(29): do_action('woocommerce_bef...')
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#6 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php à la ligne 308
+
+2023-05-14T13:40:06+00:00 CRITICAL Cannot redeclare open_container_row_div_classes() (previously declared in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\custom_shop.php:20) dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\shop_page.php à la ligne 8
+
+2023-05-14T13:40:08+00:00 CRITICAL Cannot redeclare open_container_row_div_classes() (previously declared in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\custom_shop.php:20) dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\shop_page.php à la ligne 8
+
+2023-05-14T13:40:19+00:00 CRITICAL Cannot redeclare open_container_row_div_classes() (previously declared in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\custom_shop.php:20) dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\shop_page.php à la ligne 8
+
+2023-05-14T14:15:05+00:00 CRITICAL Cannot redeclare open_container_row_div_classes() (previously declared in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\shop_page.php:14) dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\shop_page.php à la ligne 49
+
+2023-05-14T14:27:28+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "open_container_div_classes_before_shop_loop" not found or invalid function name in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\single-product.php(49): do_action('woocommerce_aft...')
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#6 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php à la ligne 308
+
+2023-05-14T20:33:37+00:00 CRITICAL Uncaught ArgumentCountError: 4 arguments are required, 3 given in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\dashboard.php:54
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\dashboard.php(54): printf('\xC3\x80 partir du ta...', 'http://mimachpl...', 'http://mimachpl...')
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3200): wc_get_template('myaccount/dashb...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#22 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\dashboard.php à la ligne 54
+
+2023-05-14T21:36:02+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\downloads.php à la ligne 40
+
+2023-05-14T21:54:03+00:00 CRITICAL Uncaught ArgumentCountError: 4 arguments are required, 3 given in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php:30
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(30): printf('La commande n&d...', '<mark class="or...', '<mark class="or...')
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(60)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('60')
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(60, Array)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '60')
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#18 [internal function]: do_shortcode_tag(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#26 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#27 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php à la ligne 30
+
+2023-05-14T21:57:49+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php:33
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(67): wc_get_template('order/order-det...', Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(60)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 60)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(60)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('60')
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(60, Array)
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '60')
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#25 [internal function]: do_shortcode_tag(Array)
+#26 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#34 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php à la ligne 33
+

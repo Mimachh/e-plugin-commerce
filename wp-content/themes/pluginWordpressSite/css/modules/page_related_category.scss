@@ -1,0 +1,33 @@
+.list-of-related-page-category {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+
+    .the-cat-name  {
+        margin-bottom: 8px;
+        font-weight: 500;
+        a {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        
+    }
+    a {
+        font-size: 14px;
+        transition: all 0.2s ease-in;
+        h3 {
+            font-weight: 500;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .active-link {
+        color: $primary;
+    }
+}

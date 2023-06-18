@@ -1,0 +1,15 @@
+.woocommerce-checkout {
+    input, textarea {
+        min-height: 40px;
+        @include input_border($secondary, 25px);
+        padding: 5px 0 5px 5px;
+        margin: 5px 0;
+    }
+
+}
+
+
+.woocommerce form .form-row {
+    padding: 3px;
+    margin: 0 0 0px;
+}

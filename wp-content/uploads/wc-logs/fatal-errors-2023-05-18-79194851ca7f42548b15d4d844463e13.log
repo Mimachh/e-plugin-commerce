@@ -1,0 +1,93 @@
+2023-05-18T07:55:11+00:00 CRITICAL Uncaught TypeError: Illegal offset type in isset or empty in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\class-acf-data.php:128
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\local-fields.php(575): ACF_Data->is(Object(WP_Term))
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\local-fields.php(665): acf_is_local_field_key(Object(WP_Term))
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): _acf_apply_is_local_field_key(false, Object(WP_Term))
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(false, Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\acf-field-functions.php(197): apply_filters('acf/is_field_ke...', false, Object(WP_Term))
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php(138): acf_is_field_key(Object(WP_Term))
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php(26): acf_maybe_get_field(Object(WP_Term), 'main_image')
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\index.php(29): get_field(Object(WP_Term), 'main_image')
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#11 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\class-acf-data.php à la ligne 128
+
+2023-05-18T11:33:38+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php:46
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 46
+
+2023-05-18T14:57:27+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:12
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 12
+
+2023-05-18T15:07:15+00:00 CRITICAL syntax error, unexpected token "echo" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 30
+
+2023-05-18T15:08:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_ID() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:27
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 27
+
+2023-05-18T15:11:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:31
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 31
+
+2023-05-18T15:21:49+00:00 CRITICAL Uncaught Error: Call to undefined function get_ID() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:32
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 32
+
+2023-05-18T15:22:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_ID() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:16
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 16
+
+2023-05-18T15:34:16+00:00 CRITICAL syntax error, unexpected variable "$cat_posts" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 23
+
+2023-05-18T16:03:21+00:00 CRITICAL Uncaught Error: Call to undefined function wp_resest_post_data() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:22
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 22
+
+2023-05-18T16:03:36+00:00 CRITICAL Uncaught Error: Call to undefined function wp_resest_postdata() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php:22
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php à la ligne 22
+
+2023-05-18T16:03:58+00:00 CRITICAL Uncaught Error: Call to undefined function wp_resest_postdata() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\single\page_related_category.php:35
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\single.php(20): get_the_page_list_of_from_the_current_category(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#4 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\single\page_related_category.php à la ligne 35
+

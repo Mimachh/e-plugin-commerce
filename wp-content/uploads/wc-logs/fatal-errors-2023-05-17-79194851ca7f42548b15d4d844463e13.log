@@ -1,0 +1,87 @@
+2023-05-17T07:53:48+00:00 CRITICAL syntax error, unexpected token "<" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 60
+
+2023-05-17T16:42:55+00:00 CRITICAL Uncaught Error: Call to undefined function get_date() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:70
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(59): generate_licence_key(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#26 [internal function]: do_shortcode_tag(Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#35 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 70
+
+2023-05-17T16:59:12+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\front-page.php:26
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\front-page.php à la ligne 26
+
+2023-05-17T17:21:04+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 10
+
+2023-05-17T17:25:52+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php:38
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 38
+
+2023-05-17T17:27:08+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php:44
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 44
+
+2023-05-17T17:27:37+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php:44
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#3 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 44
+
+2023-05-17T17:30:34+00:00 CRITICAL syntax error, unexpected token "while" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php à la ligne 49
+
+2023-05-17T17:35:01+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php:49
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\archive.php(46): the_title(Object(WP_Query))
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#4 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php à la ligne 49
+

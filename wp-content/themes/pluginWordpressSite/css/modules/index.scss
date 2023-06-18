@@ -1,0 +1,112 @@
+
+.index-doc-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @extend .main-section;
+}
+    .index-list-grid-structure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .index-list-grid-detail {
+        position: relative;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 2.2em;
+        border-radius: 25px;
+
+        article {
+            cursor: pointer;
+            display: flex;
+            z-index: 12;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+
+            border-radius: 25px;
+    
+            .content-card-doc {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 25px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                border: 1px solid $dark;
+                .title {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0%;
+                    right: 0%;
+                    // transform: translate(-50%, -50%);
+                    text-align: center;
+                    padding: 12px 0;
+                    font-size: 0.8em;
+                    opacity: 0.8;
+                    
+                    &-1 {
+                        background-color: $dark;
+                        color: $light;  
+                    }
+                    &-2 {
+                        background-color: $dark;
+                        color: $light;  
+                    }
+                    &-3 {
+                        background-color: $dark;
+                        color: $light;                    
+                    }
+                }
+    
+                .doc-img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 25px;
+                    transition: all 0.2s ease-in;
+        
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+    
+    
+            .debord-1 {
+                @include debord-card-doc(1%, 1%, $primary, 101%, 102%);
+            }
+            .debord-2 {
+                @include debord-card-doc(1%, 1%, $green, 101%, 102%);
+            }
+            .debord-3 {
+                @include debord-card-doc(1%, 1%, $tertiary, 101%, 102%);
+            }
+    
+        }
+    }
+
+
+
+
+
+@include atSmallMedium {
+    .index-list-grid-detail {
+        padding: 4em 2em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 2em;
+    }
+}

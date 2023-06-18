@@ -1,0 +1,349 @@
+2023-05-16T08:15:44+00:00 CRITICAL syntax error, unexpected token "echo" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\header.php à la ligne 48
+
+2023-05-16T11:53:15+00:00 CRITICAL syntax error, unexpected token ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php à la ligne 61
+
+2023-05-16T12:20:35+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:30
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(58): generate_licence_key(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#26 [internal function]: do_shortcode_tag(Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#35 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 30
+
+2023-05-16T12:25:43+00:00 CRITICAL Uncaught Error: Call to a member function have_post() on null in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:32
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(58): generate_licence_key(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#26 [internal function]: do_shortcode_tag(Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#35 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 32
+
+2023-05-16T12:31:13+00:00 CRITICAL syntax error, unexpected token "while" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 31
+
+2023-05-16T12:31:13+00:00 CRITICAL syntax error, unexpected token "while" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 31
+
+2023-05-16T12:33:51+00:00 CRITICAL syntax error, unexpected token "array", expecting ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 26
+
+2023-05-16T12:33:52+00:00 CRITICAL syntax error, unexpected token "array", expecting ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 26
+
+2023-05-16T12:34:50+00:00 CRITICAL syntax error, unexpected token "array", expecting ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 31
+
+2023-05-16T12:38:03+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:39
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(58): generate_licence_key(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#26 [internal function]: do_shortcode_tag(Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#35 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 39
+
+2023-05-16T12:38:47+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:39
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(58): generate_licence_key(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#26 [internal function]: do_shortcode_tag(Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#35 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 39
+
+2023-05-16T12:39:57+00:00 CRITICAL Uncaught TypeError: Illegal offset type in isset or empty in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\class-acf-data.php:128
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\local-fields.php(575): ACF_Data->is(Object(WP_Query))
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\local-fields.php(665): acf_is_local_field_key(Object(WP_Query))
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): _acf_apply_is_local_field_key(false, Object(WP_Query))
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(false, Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\acf-field-functions.php(197): apply_filters('acf/is_field_ke...', false, Object(WP_Query))
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php(138): acf_is_field_key(Object(WP_Query))
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php(26): acf_maybe_get_field(Object(WP_Query), 'licence_key')
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php(71): get_field(Object(WP_Query), 'licence_key', true)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php(39): the_field(Object(WP_Query), 'licence_key')
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(58): generate_licence_key(Array)
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#26 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#35 [internal function]: do_shortcode_tag(Array)
+#36 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#37 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#38 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#39 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#40 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#41 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#42 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#43 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#44 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\advanced-custom-fields\includes\class-acf-data.php à la ligne 128
+
+2023-05-16T12:45:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:44
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details-item.php(58): generate_licence_key(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\order\order-details.php(77): wc_get_template('order/order-det...', Array)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2707): wc_get_template('order/order-det...', Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_order_details_table(67)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\view-order.php(56): do_action('woocommerce_vie...', 67)
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3256): WC_Shortcode_My_Account::view_order(67)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_view_order('67')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(67, Array)
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3190): do_action('woocommerce_acc...', '67')
+#16 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): woocommerce_account_content('')
+#17 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\woocommerce\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#20 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\Users\\Karl\\L...')
+#21 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#22 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#23 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#24 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#25 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(355): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#26 [internal function]: do_shortcode_tag(Array)
+#27 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#28 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_my...')
+#29 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#30 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#31 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\page.php(11): the_content()
+#32 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Karl\\L...')
+#33 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Karl\\L...')
+#34 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#35 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 44
+
+2023-05-16T14:31:41+00:00 CRITICAL syntax error, unexpected token ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 41
+
+2023-05-16T14:32:42+00:00 CRITICAL syntax error, unexpected token ")" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 41
+
+2023-05-16T15:46:26+00:00 CRITICAL Unmatched '}' dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 77
+
+2023-05-16T15:46:27+00:00 CRITICAL Unmatched '}' dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 77
+
+2023-05-16T16:25:30+00:00 CRITICAL syntax error, unexpected identifier "print_r" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\routes\generate-licence-key.php à la ligne 38
+
+2023-05-16T16:27:31+00:00 CRITICAL syntax error, unexpected identifier "print_r" dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\routes\generate-licence-key.php à la ligne 38
+
+2023-05-16T17:38:27+00:00 CRITICAL Uncaught Error: Call to undefined function sanatize_text_field() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:99
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(310): makeKeyPrivate(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php(4416): apply_filters('wp_insert_post_...', Array, Array, Array, true)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php(3593): wp_update_post(Array)
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-admin\edit.php(131): wp_trash_post(94)
+#6 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 99
+
+2023-05-16T17:45:07+00:00 CRITICAL Uncaught Error: Call to undefined function sanatize_text_field() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:99
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(310): makeKeyPrivate(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php(4416): apply_filters('wp_insert_post_...', Array, Array, Array, false)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\routes\generate-licence-key.php(50): wp_insert_post(Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(1181): createLicenceKey(Object(WP_REST_Request))
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/site/v1/manage...', Array, NULL)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api.php(410): WP_REST_Server->serve_request('/site/v1/manage...')
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp.php(399): do_action_ref_array('parse_request', Array)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp.php(780): WP->parse_request('')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\functions.php(1334): WP->main('')
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(16): wp()
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#16 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 99
+
+2023-05-16T17:45:11+00:00 CRITICAL Uncaught Error: Call to undefined function sanatize_text_field() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:99
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(310): makeKeyPrivate(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php(4416): apply_filters('wp_insert_post_...', Array, Array, Array, false)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\routes\generate-licence-key.php(50): wp_insert_post(Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(1181): createLicenceKey(Object(WP_REST_Request))
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/site/v1/manage...', Array, NULL)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api.php(410): WP_REST_Server->serve_request('/site/v1/manage...')
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp.php(399): do_action_ref_array('parse_request', Array)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp.php(780): WP->parse_request('')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\functions.php(1334): WP->main('')
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(16): wp()
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#16 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 99
+
+2023-05-16T18:14:13+00:00 CRITICAL Uncaught Error: Call to undefined function sanatize_text_field() in C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php:99
+Stack trace:
+#0 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(310): makeKeyPrivate(Array)
+#1 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\post.php(4416): apply_filters('wp_insert_post_...', Array, Array, Array, false)
+#3 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\routes\generate-licence-key.php(50): wp_insert_post(Array)
+#4 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(1181): createLicenceKey(Object(WP_REST_Request))
+#5 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/site/v1/manage...', Array, NULL)
+#6 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api\class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#7 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\rest-api.php(410): WP_REST_Server->serve_request('/site/v1/manage...')
+#8 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#9 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#10 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#11 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp.php(399): do_action_ref_array('parse_request', Array)
+#12 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\class-wp.php(780): WP->parse_request('')
+#13 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-includes\functions.php(1334): WP->main('')
+#14 C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-blog-header.php(16): wp()
+#15 C:\Users\Karl\Local Sites\mimachplugins\app\public\index.php(17): require('C:\\Users\\Karl\\L...')
+#16 {main}
+  thrown dans C:\Users\Karl\Local Sites\mimachplugins\app\public\wp-content\themes\pluginWordpressSite\includes\woocommerce\add_generation_licence_key.php à la ligne 99
+

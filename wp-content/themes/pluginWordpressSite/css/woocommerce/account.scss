@@ -1,0 +1,61 @@
+.woocommerce-MyAccount-navigation ul li {
+    &.is-active {
+        color: $primary;
+    }
+    a {
+        font-size: 18px;
+        font-weight: 500;
+        &:hover {
+            color: $primary;
+        } 
+    }
+}
+
+.fieldset_edit_account_custom {
+    margin-top: 15px;
+    padding: 8px 5px;
+}
+
+.woocommerce-EditAccountForm {
+
+    input, textarea {
+        min-height: 40px;
+        @include input_border($secondary, 25px);
+        padding: 5px 0 5px 5px;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+}
+
+.div_100_per_cent_width {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.button_edit_account_div_custom {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.button_edit_account_himself {
+    @include debord_style(3%, 1%, 101%, 115%);
+    button {
+        @include prepare_button_to_debord(50px, auto);
+
+        &:hover {
+            background-color: $dark !important;
+            color: $tertiary;
+        }
+    }
+
+    &:hover {
+        + .debord {
+            background-color: $tertiary;
+        }
+    }
+
+
+
+}
